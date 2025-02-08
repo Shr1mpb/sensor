@@ -8,7 +8,7 @@
 
     <div class="data">
       <div>
-        <span>水流方向:(与坐标轴夹角)</span>
+        <span>水流方向:(夹角)</span>
         <div class="axis">X轴: <span class="inline-data">{{waterDirX}}π</span></div>
         <div class="axis">Y轴: <span class="inline-data">{{waterDirY}}π</span></div>
         <div class="axis">Z轴: <span class="inline-data">{{waterDirZ}}π</span></div>
@@ -106,7 +106,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -134,29 +134,29 @@
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 30px;
-  max-width: 600px;
-  margin: 20px auto;
+  padding: 3.6%;
+  width: 100%;
+  margin: 2.4% auto;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .sensor h2 {
   font-size: 1.8em;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin-bottom: 2.4%;
+  margin-right: 2.4%;
 }
 
 .sensor .data {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .sensor .data div {
   /*flex-grow flex-shrink flex-basis*/
-  flex: 0 1 calc(50% - 20px); /* 每个项占据50%的宽度，减去间距 */
-  padding: 15px;
+  flex: 0 1 calc(50% - 15px); /* 每个项占据50%的宽度，减去间距 */
+  padding: 10px;
   background-color: #fff;
   border-radius: 5px; /* 圆角 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
