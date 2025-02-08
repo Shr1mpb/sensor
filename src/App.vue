@@ -102,6 +102,34 @@
 </script>
 
 <style scoped>
+/* 添加淡入动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sensor {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.data > div {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* 为每个数据组添加延迟 */
+.data > div:nth-child(1) { animation-delay: 0.2s; }
+.data > div:nth-child(2) { animation-delay: 0.4s; }
+.data > div:nth-child(3) { animation-delay: 0.6s; }
+.data > div:nth-child(4) { animation-delay: 0.8s; }
+
 .sensor {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
